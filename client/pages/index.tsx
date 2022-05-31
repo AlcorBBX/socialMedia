@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>ВАССАП НИГГА</h1>
+        
       </main>
 
       <footer className={styles.footer}>
