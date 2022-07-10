@@ -1,5 +1,11 @@
-export default function Auth(){
-    return (
-        <h1></h1>
-    )
+import React, { FC } from 'react'
+import { useAuth } from '@/hooks/useAuth'
+
+const Auth: FC = () => {
+    const {user} = useAuth()
+  return (
+    <div>Auth</div>
+  )
 }
+
+export default Auth
