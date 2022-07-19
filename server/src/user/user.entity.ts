@@ -26,7 +26,7 @@ export class UserEntity extends Base {
     location:string
 
     @Column({default: '', name: 'avar_path'})
-    avarPath:string
+    avatarPath:string
     
 
     @OneToMany(() => SubscriptionsEntity, sub => sub.fromUser)
