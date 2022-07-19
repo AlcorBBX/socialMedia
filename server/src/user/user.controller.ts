@@ -13,7 +13,7 @@ export class UserController {
   }
 
   // @Auth()
-  @Get('profile')
+  @Get('by-id/:id')
   async getUser(@Param('id') id: string) {
     return this.userService.byId(+id)
   }

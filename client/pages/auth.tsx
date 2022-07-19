@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
-import { useAuth } from '@/hooks/useAuth'
+import Auth from "@/components/screens/auth/Auth"
+import { NextPage } from "next"
 
-const Auth: FC = () => {
-    const {user} = useAuth()
-  return (
-    <div>Auth</div>
-  )
-}
 
-export default Auth
+const AuthPage: NextPage = () => {
+    return (
+      <Auth/>
+    )
+  }
+  
+  export default AuthPage

@@ -1,5 +1,10 @@
-export default function Auth(){
+import { NextPage } from "next"
+import Profile from "./view/Profile"
+
+const ProfilePage: NextPage = () => {
     return (
-        <h1>fff</h1>
+      <Profile/>
     )
-}
+  }
+  
+  export default ProfilePage
