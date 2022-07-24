@@ -6,13 +6,13 @@ const error = ''
 
 const AddPost: FC = () => {
     const [content, setContent] = useState('')
-    // const {user} = useAuth
+    const {user} = useAuth()
 
-    // const addPostHandler = async (e: KeyboardEvent<HTMLInputElement>) => {
-    //     if (e.key === 'Enter' && user){
-    //         setContent('')
-    //     }
-    // }
+    const addPostHandler = async (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter' && user){
+            setContent('')
+        }
+    }
     return ( 
         <>
             {error && (
